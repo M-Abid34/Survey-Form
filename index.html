@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </main>
+    <div class="container">
+    <form>
+        <fieldset>
+            <label for="name">Name<input id="name" type="text" required></label>
+            <label for="email">Email<input id="email" type="email" required></label>
+            <label for="age">Age<input id="age" type="number" required></label>
+            <label for="role">Select the option that best represent your current position
+                <select id="role">
+                    <option>Select your current position</option>
+                    <option>Student</option>
+                    <option>Full Time Job</option>
+                    <option>Full Time Study</option>
+                    <option>Preffer not to say</option>
+                    <option>Others</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Would you recommend our platform to a friend?
+                <label for="yes"><input id="yes" type="radio" name="recommendation" class="inline">Yes</label>
+                <label for="no"><input id="no" type="radio" name="recommendation" class="inline">No</label>
+                <label for="maybe"><input id="maybe" type="radio" name="recommendation" class="inline">Maybe</label>
+            </label>
+            <label>What is your favorite feature of our platform?</label>
+            <select>
+                <option>Select an Option</option>
+                <option>Challenges</option>
+                <option>Tasks</option>
+                <option>Projects</option>
+                <option>Others</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label>What would you like to see improved?(Check all that apply)
+                <label for="front"><input type="checkbox" id="front" class="inline" value="Front-end Projects">Front-end Projects</label>
+                <label for="back"><input type="checkbox" id="back" class="inline" value="Back-end Projects">Back-end Projects</label>
+                <label for="software"><input type="checkbox" id="software" class="inline" value="Software development">Software development</label>
+                <label for="ios"><input type="checkbox" id="ios" class="inline" value="IOS development">IOS development</label>
+                <label for="android"><input type="checkbox" id="android" class="inline" value="Android development">Android development</label>
+                <label for="data"><input type="checkbox" id="data" class="inline" value="Data structures">Data structures</label>
+                <label for="machine"><input type="checkbox" id="machine" class="inline" value="Machine Learning">Machine Learning</label>
+                <label for="neural"><input type="checkbox" id="neural" class="inline" value="Neural Networks">Neural Networks</label>
+                <label for="textarea">Any comments or suggestions? (500 characters max)
+                    <textarea id="textarea" placeholder="Write your comments/suggestions here...."  rows="6" cols="4" maxlength="500"></textarea>
+                </label>
+        </fieldset>
+        <input type="button" value="submit">
+    </form>
+    </div>
+</body>
+</html>
